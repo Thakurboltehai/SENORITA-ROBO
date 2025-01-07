@@ -10,7 +10,7 @@ from pyrogram.types import *
 button = [
        [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/AvishaXbot?startgroup=true",
+                text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/StrangerSuperbot?startgroup=true",
             )
         ]
 ]
@@ -26,7 +26,7 @@ async def logo(app, msg: Message):
     req = requests.get(API).url
     await msg.reply_photo(
         photo=f"{req}",
-        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/the_friendz)",
+        caption=f"❖ ᴀɴɪᴍᴇ ʟᴏɢᴏ ʙʏ ➥ [s ᴇ ɴ ᴏ ʀ ɪ ᴛ ᴀ](https://t.me/mastiwithfriendsxd)",
         reply_markup=InlineKeyboardMarkup(button),
     )
 
