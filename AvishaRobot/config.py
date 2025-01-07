@@ -16,11 +16,11 @@ class Config(object):
   
     OWNER_ID = getenv("OWNER_ID", "6195725562") 
 
-    OWNER_USERNAME = ("OWNER_USERNAME", "loco_x_Pilot")
+    OWNER_USERNAME = ("OWNER_USERNAME", " STRANGERDEVS")
     
     SUPPORT_CHAT = getenv("SUPPORT_CHAT", "the_friendz")
    
-    START_IMG = getenv("START_IMG", "https://graph.org/file/eaa3a2602e43844a488a5.jpg")
+    START_IMG = getenv("START_IMG", "https://files.catbox.moe/7dz563.jpg")
 
     JOIN_LOGGER = getenv("JOIN_LOGGER", "-1002080453210")
    
@@ -42,7 +42,7 @@ class Config(object):
 
     SPAMWATCH_API = getenv("SPAMWATCH_API", "3624487efd8e4ca9c949f1ab99654ad1e4de854f41a14afd00f3ca82d808dc8c")
     
-    SPAMWATCH_SUPPORT_CHAT = getenv("SPAMWATCH_SUPPORT_CHAT", "h_cc_help")
+    SPAMWATCH_SUPPORT_CHAT = getenv("SPAMWATCH_SUPPORT_CHAT", "MASTIWITHFRIENDSXD")
     
     WALL_API = getenv("WALL_API", "2455acab48f3a935a8e703e54e26d121")
     
