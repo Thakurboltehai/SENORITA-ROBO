@@ -14,25 +14,25 @@ class Config(object):
    
     TOKEN = getenv("TOKEN", None)
   
-    OWNER_ID = getenv("OWNER_ID", "6195725562") 
+    OWNER_ID = getenv("OWNER_ID", "6919199044") 
 
     OWNER_USERNAME = ("OWNER_USERNAME", " STRANGERDEVS")
     
-    SUPPORT_CHAT = getenv("SUPPORT_CHAT", "the_friendz")
+    SUPPORT_CHAT = getenv("SUPPORT_CHAT", "MASTIWITHFRIENDSXD")
    
     START_IMG = getenv("START_IMG", "https://files.catbox.moe/7dz563.jpg")
 
-    JOIN_LOGGER = getenv("JOIN_LOGGER", "-1002080453210")
+    JOIN_LOGGER = getenv("JOIN_LOGGER", "-1002018556839")
    
-    EVENT_LOGS = getenv("EVENT_LOGS",  "-1002080453210")
+    EVENT_LOGS = getenv("EVENT_LOGS",  "-1002018556839")
   
-    ERROR_LOGS = getenv("ERROR_LOGS", "-1001929735324")
+    ERROR_LOGS = getenv("ERROR_LOGS", "-1002018556839")
 
     MONGO_DB_URI= getenv("MONGO_DB_URI", None)
    
-    LOG_CHANNEL = getenv("LOG_CHANNEL", "-1001852000392")
+    LOG_CHANNEL = getenv("LOG_CHANNEL", "-1002040686406")
    
-    BOT_USERNAME = getenv("BOT_USERNAME" , "avishaBot")
+    BOT_USERNAME = getenv("BOT_USERNAME" , "StrangerSuperbot")
    
     DATABASE_URL = getenv("DATABASE_URL", None)
 
