@@ -45,7 +45,7 @@ def speedtestxyz_callback(update: Update, context: CallbackContext):
 
         elif query.data == "speedtest_text":
             result = speed.results.dict()
-            replymsg += f"\n\n⬤ ᴅᴏᴡɴʟᴏᴀᴅ ➥ `{convert(result['download'])} ᴍʙ/s`\n● ᴜᴘʟᴏᴀᴅ ➥ `{convert(result['upload'])}ᴍʙ/s`\n● ᴘɪɴɢ ➥ `{result['ping']}`\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ ᴀᴠɪsʜᴀ ꭙ ʀᴏʙᴏᴛ™ ♡゙"
+            replymsg += f"\n\n⬤ ᴅᴏᴡɴʟᴏᴀᴅ ➥ `{convert(result['download'])} ᴍʙ/s`\n● ᴜᴘʟᴏᴀᴅ ➥ `{convert(result['upload'])}ᴍʙ/s`\n● ᴘɪɴɢ ➥ `{result['ping']}`\n\n❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ˹ sᴇɴᴏʀɪᴛᴀ ꭙ ʀᴏʙᴏᴛ™ ♡゙"
             update.effective_message.edit_text(replymsg, parse_mode=ParseMode.MARKDOWN)
     else:
         query.answer("⬤ ʏᴏᴜ ᴀʀᴇ ʀᴇǫᴜɪʀᴇᴅ ᴛᴏ ᴊᴏɪɴ @the_friendz ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.")
