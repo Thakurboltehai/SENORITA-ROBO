@@ -6,7 +6,7 @@ from AvishaRobot import pbot as app
 def text_to_speech(client, message):
     text = message.text.split(' ', 1)[1]
     tts = gTTS(text=text, lang='hi')
-    tts.save('avisha.mp3')
+    tts.save('senorita.mp3')
     client.send_audio(message.chat.id, 'avisha.mp3')
   
 __mod_name__ = "ɢᴛᴛs"
