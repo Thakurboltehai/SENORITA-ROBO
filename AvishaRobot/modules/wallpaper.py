@@ -8,7 +8,7 @@ from AvishaRobot import pbot
 
 @pbot.on_message(filters.command(["wall", "wallpaper"]))
 async def wall(_, message: Message):
-    "⬤ ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ ʀᴏʏ-ᴇᴅɪᴛx"
+    "⬤ ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ sʜɪᴠᴀɴsʜ-xᴅ"
     try:
         text = message.text.split(None, 1)[1]
     except IndexError:
@@ -21,7 +21,7 @@ async def wall(_, message: Message):
         ran = random.randint(0, 3)
         await message.reply_photo(
             photo=url[ran]["imageUrl"],
-            caption=f"⬤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐",
+            caption=f"⬤ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ ๛sᴇɴᴏʀɪᴛᴀ ʀᴏʙᴏ ࿐",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("ʟɪɴᴋ", url=url[ran]["imageUrl"])],
