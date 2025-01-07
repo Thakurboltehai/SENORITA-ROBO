@@ -8,7 +8,7 @@ from AvishaRobot import pbot
 
 EVAA = [
     [
-        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/avishaxbot?startgroup=true"),
+        InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/StrangerSuperbot?startgroup=true"),
     ],
 ]
 
@@ -31,7 +31,7 @@ infotext = (
     "● ʟᴀsᴛ ɴᴀᴍᴇ ➥ `{last_name}`\n"
     "● ᴜsᴇʀɴᴀᴍᴇ ➥ `@{username}`\n"
     "● ʟᴀsᴛ sᴇᴇɴ ➥ `{last_online}`\n\n"
-    "❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐](https://t.me/avishaxbot)"
+    "❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛sᴇɴᴏʀɪᴛᴀ ʀᴏʙᴏ ࿐](https://t.me/StrangerSuperbot)"
 )
 
 
