@@ -36,7 +36,7 @@ MISHI = [
 "https://graph.org/file/abb6b4bb00e2751bc9f54.jpg",
 ]
 
-Mukesh = [
+Avisha = [
     [
         InlineKeyboardButton(text="▪️ᴜᴘᴅᴀᴛᴇ▪️", url=f"https://t.me/SHIVANSH474"),
         InlineKeyboardButton(text="▪️ꜱᴜᴘᴘᴏʀᴛ▪️", url=f"https://t.me/{SUPPORT_CHAT}"),
@@ -72,7 +72,7 @@ async def restart(client, m: Message):
     await m.reply_photo(
         random.choice(MISHI),
         caption=f"""**ꕤ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}](f"t.me/{BOT_USERNAME}") ꕤ**\n\nꕤ **ʟɪʙʀᴀʀʏ ➛** `{lver}`\nꕤ **ᴛᴇʟᴇᴛʜᴏɴ ➛** `{tver}`\nꕤ **ᴘʏʀᴏɢʀᴀᴍ ➛** `{pver}`\nꕤ **ᴘʏᴛʜᴏɴ ➛** `{pyver()}`\n\nꕤ **ᴍᴀᴅᴇ ʙʏ ➛** [sʜɪᴠᴀɴsʜ-xᴅ](tg://user?id={OWNER_ID})""",
-        reply_markup=InlineKeyboardMarkup(Mukesh),
+        reply_markup=InlineKeyboardMarkup(Avisha),
     )
 
 __mod_name__ = "ᴀʟɪᴠᴇ"
