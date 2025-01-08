@@ -9,7 +9,7 @@ EVAA = [
     ],
 ]
 
-@app.on_message(filters.command("upscale"))
+@app.on_message(filters.command("okupscale"))
 async def upscale_image(client, message):
     try:
         # Check if the replied message contains a photo
