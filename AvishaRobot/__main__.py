@@ -301,7 +301,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.5)
             lol.edit_text("20% ██▒▒▒▒▒▒▒▒")
             time.sleep(0.3)
-            lol.edit_text("*40% ████▒▒▒▒▒▒")
+            lol.edit_text("40% ████▒▒▒▒▒▒")
             time.sleep(0.4)
             lol.edit_text("60% ██████▒▒▒▒")
             time.sleep(0.5)
@@ -755,7 +755,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 
 🔸 /mhelp ➛ ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅꜱ ʜᴇʟᴘᴇʀ ᴍᴇɴᴜ ᴡɪᴛʜ ᴅᴇᴛᴀɪʟᴇᴅ ᴇxᴘʟᴀɴᴀᴛɪᴏɴꜱ ᴏғ ᴄᴏᴍᴍᴀɴᴅꜱ.
 
-🔸 /ping ➛ ᴘɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴄʜᴇᴄᴋ ʀᴀᴍ, ᴄᴘᴜ ᴇᴛᴄ ꜱᴛᴀᴛꜱ ᴏғ ʙᴏᴛ.
+🔸 /mping ➛ ᴘɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴄʜᴇᴄᴋ ʀᴀᴍ, ᴄᴘᴜ ᴇᴛᴄ ꜱᴛᴀᴛꜱ ᴏғ ʙᴏᴛ.
 
 *ꕤ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ ꕤ*
 
