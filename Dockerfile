@@ -1,79 +1,28 @@
-# We're using Debian Slim Buster image
-FROM python:3.8.5-slim-buster
+FROM python:3.13.2
 
-ENV PIP_NO_CACHE_DIR 1
+# Install ffmpeg and MongoDB
+RUN apt-get update && \
+    apt-get install -y ffmpeg gnupg curl && \
+    curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
+      gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+      --dearmor && \
+    echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/7.0 main" | \
+      tee /etc/apt/sources.list.d/mongodb-org-7.0.list && \
+    apt-get update && \
+    apt-get install -y mongodb-org && \
+    mkdir -p /data/db && \
+    rm -rf /var/lib/apt/lists/*
 
-RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
+# Copy requirements and install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Installing Required Packages
-RUN apt update && apt upgrade -y && \
-    apt install --no-install-recommends -y \
-    debian-keyring \
-    debian-archive-keyring \
-    bash \
-    bzip2 \
-    curl \
-    figlet \
-    git \
-    util-linux \
-    libffi-dev \
-    libjpeg-dev \
-    libjpeg62-turbo-dev \
-    libwebp-dev \
-    linux-headers-amd64 \
-    musl-dev \
-    musl \
-    neofetch \
-    php-pgsql \
-    python3-lxml \
-    postgresql \
-    postgresql-client \
-    python3-psycopg2 \
-    libpq-dev \
-    libcurl4-openssl-dev \
-    libxml2-dev \
-    libxslt1-dev \
-    python3-pip \
-    python3-requests \
-    python3-sqlalchemy \
-    python3-tz \
-    python3-aiohttp \
-    openssl \
-    pv \
-    jq \
-    wget \
-    python3 \
-    python3-dev \
-    libreadline-dev \
-    libyaml-dev \
-    gcc \
-    sqlite3 \
-    libsqlite3-dev \
-    sudo \
-    zlib1g \
-    ffmpeg \
-    libssl-dev \
-    libgconf-2-4 \
-    libxi6 \
-    xvfb \
-    unzip \
-    libopus0 \
-    libopus-dev \
-    && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
+# Copy application code
+COPY . .
 
-# Pypi package Repo upgrade
-RUN pip3 install --upgrade pip setuptools
+# Create startup script to launch both MongoDB and your Python app
+RUN echo '#!/bin/bash\nmongod --fork --logpath /var/log/mongodb.log\npython3 main.py' > start.sh && \
+    chmod +x start.sh
 
-RUN git clone https://github.com/tinaarobot/AvishaRobot /root/AvishaRobot
-WORKDIR /root/AvishaRobot
-
-#Copy config file to /root/AvishaRobot/AvishaRobot
-COPY ./AvishaRobot/config.py ./AvishaRobot/config.py* /root/AvishaRobot/AvishaRobot/
-
-ENV PATH="/home/bot/bin:$PATH"
-
-# Install requirements
-RUN pip3 install -U -r requirements.txt
-
-# Starting Worker
-CMD ["python3","-m","AvishaRobot"]
+# Default command
+CMD ["./start.sh"]
