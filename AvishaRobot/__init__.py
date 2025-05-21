@@ -54,7 +54,7 @@ if ENV:
         "START_IMG", ""
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "the_friendz")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "https://t.me/+XEE51r2qelc4MDc1")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -76,8 +76,8 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
     try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "6919199044").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "6919199044").split())
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "7688993208").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "7688993208").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
