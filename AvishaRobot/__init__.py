@@ -82,17 +82,17 @@ if ENV:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
     try:
-        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "6919199044").split())
+        DEMONS = set(int(x) for x in os.environ.get("DEMONS", "7688993208").split())
     except ValueError:
         raise Exception("Your support users list does not contain valid integers.")
 
     try:
-        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "6919199044").split())
+        TIGERS = set(int(x) for x in os.environ.get("TIGERS", "7688993208").split())
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
     try:
-        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "6919199044").split())
+        WOLVES = set(int(x) for x in os.environ.get("WOLVES", "7688993208").split())
     except ValueError:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
