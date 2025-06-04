@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=FF00FF&width=420&lines=🐙+🄳🄴🄿🄻🄾🅈+🄾🄽+🄷🄴🅁🄾🄺🅄+🄽🄾🅆+🐙">
+  <img src="https://readme-typing-svg.herokuapp.com?color=pink&width=420&lines=🐙+🄳🄴🄿🄻🄾🅈+🄾🄽+🄷🄴🅁🄾🄺🅄+🄽🄾🅆+🐙">
 </p>
 
 <h3 align="center">─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─</h3>
