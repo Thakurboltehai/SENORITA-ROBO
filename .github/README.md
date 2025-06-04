@@ -20,5 +20,5 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=FFFF00&width=420&lines=🐉+🄹🄾🄸🄽+🄾🅄🅁+🅂🅄🄿🄿🄾🅁🅃+🄶🅁🄾🅄🄿+🐉">
+  <img src="https://readme-typing-svg.herokuapp.com?color=FF1493&width=420&lines=🐉+🄹🄾🄸🄽+🄾🅄🅁+🅂🅄🄿🄿🄾🅁🅃+🄶🅁🄾🅄🄿+🐉">
 </p>
