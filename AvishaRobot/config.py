@@ -18,7 +18,7 @@ class Config(object):
 
     OWNER_USERNAME = ("OWNER_USERNAME", " oy_baby")
     
-    SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+XEE51r2qelc4MDc1")
+    SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+gHZCdInUIQo4N2I9")
    
     START_IMG = getenv("START_IMG", "https://files.catbox.moe/7dz563.jpg")
 
@@ -42,7 +42,7 @@ class Config(object):
 
     SPAMWATCH_API = getenv("SPAMWATCH_API", "3624487efd8e4ca9c949f1ab99654ad1e4de854f41a14afd00f3ca82d808dc8c")
     
-    SPAMWATCH_SUPPORT_CHAT = getenv("SPAMWATCH_SUPPORT_CHAT", "MASTIWITHFRIENDSXD")
+    SPAMWATCH_SUPPORT_CHAT = getenv("SPAMWATCH_SUPPORT_CHAT", "thakur_bolte_haiiii")
     
     WALL_API = getenv("WALL_API", "2455acab48f3a935a8e703e54e26d121")
     
