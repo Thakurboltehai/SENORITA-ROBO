@@ -38,7 +38,7 @@ MISHI = [
 
 Avisha = [
     [
-        InlineKeyboardButton(text="▪️ᴜᴘᴅᴀᴛᴇ▪️", url=f"https://t.me/SHIVANSH474"),
+        InlineKeyboardButton(text="▪️ᴜᴘᴅᴀᴛᴇ▪️", url=f"https://t.me/thakur_bolte_haiiii"),
         InlineKeyboardButton(text="▪️ꜱᴜᴘᴘᴏʀᴛ▪️", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
